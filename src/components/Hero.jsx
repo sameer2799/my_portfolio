@@ -1,7 +1,7 @@
 import { color, motion } from 'framer-motion'
 
 import { styles } from "../styles"
-import photo from '../assets/photo.png'
+import { photo } from '../assets'
 import { ComputersCanvas } from './canvas'
 
 const Hero = () => {
@@ -18,8 +18,8 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I&apos;m a full-stack developer, currently interested in <br className="sm:block hidden"/>Machine Learning and Data Science.</p>
         </div>
       </div>
-      <div className={`${styles.paddingX} relative insert-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <img src={`../assets/${photo}`} alt="MyPhoto" />
+      <div className={`${styles.paddingX} relative insert-0 top-[120px] max-w-7xl mx-auto flex flex-row justify-start items-start gap-5`}>
+        <img src={photo} alt="MyPhoto" className="rounded-full " />
       </div>
       {/* <ComputersCanvas/> */}
       {/* <div className="absolute xs:bottom-10 bottom-32 w-flex flex justify-center items-center">
